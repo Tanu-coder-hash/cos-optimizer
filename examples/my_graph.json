@@ -1,0 +1,7 @@
+{"nodes": [{"id": "Depot"}, {"id": "A"}, {"id": "B"}, {"id": "C"}, {"id": "D"}, {"id": "E"}, {"id": "F"}],
+ "links": [{"source": "Depot", "target": "A", "weight": 4}, {"source": "Depot", "target": "B", "weight": 2},
+           {"source": "B", "target": "A", "weight": 1}, {"source": "A", "target": "C", "weight": 5},
+           {"source": "B", "target": "D", "weight": 8}, {"source": "C", "target": "D", "weight": 2},
+           {"source": "D", "target": "E", "weight": 3}, {"source": "C", "target": "E", "weight": 7},
+           {"source": "E", "target": "F", "weight": 1}, {"source": "B", "target": "F", "weight": 15}],
+ "directed": true}

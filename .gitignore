@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+.cosopt_cache/
+runs/
+.pytest_cache/

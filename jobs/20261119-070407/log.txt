@@ -1,0 +1,15 @@
+NOTE: simulated backend - numbers are synthetic, for pipeline testing only.
+Run directory: C:\Users\dell\Documents\cos-optimizer\runs\20261119-070408-grid-simulated_offline-demo
+Generation 0: evaluating 3 seed vocabularies on 6 dev instances
+  [0] cot-natural-language     acc=0.667 judge=0.75 tok=468 fit=0.742 n=6
+  [0] default-cos              acc=0.833 judge=0.75 tok=224 fit=0.934 n=6
+  [0] rand-792518              acc=0.833 judge=0.70 tok=174 fit=0.935 n=6
+Generation 1: 2 new proposals (random, crossover)
+  [1] rand-331556              acc=1.000 judge=0.85 tok=207 fit=1.113 n=6
+  [1] x-765752                 acc=0.500 judge=0.00 tok=210 fit=0.528 n=4
+  pruned x-765752 after screening (acc 0.50)
+Best vocabulary: rand-331556 (dev acc 1.000). Running held-out test...
+TEST cot          acc=0.833 CI95=[0.583,1.000] tokens=455
+TEST default_cos  acc=0.917 CI95=[0.750,1.000] tokens=221
+TEST optimized    acc=1.000 CI95=[1.000,1.000] tokens=204
+Report: C:\Users\dell\Documents\cos-optimizer\runs\20261119-070408-grid-simulated_offline-demo/report.md

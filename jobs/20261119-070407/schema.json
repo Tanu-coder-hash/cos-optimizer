@@ -1,0 +1,1 @@
+{"domain": "grid", "detected_by": "built-in generator", "dims": [5, 5], "entities": 21, "relations": "4-neighbour adjacency", "walls": 4, "difficulty": "easy"}

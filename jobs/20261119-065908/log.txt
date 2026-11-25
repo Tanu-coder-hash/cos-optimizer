@@ -1,0 +1,15 @@
+NOTE: simulated backend - numbers are synthetic, for pipeline testing only.
+Run directory: C:\Users\dell\Documents\cos-optimizer\runs\20261119-065914-bricks-simulated_offline-demo
+Generation 0: evaluating 3 seed vocabularies on 6 dev instances
+  [0] cot-natural-language     acc=0.500 judge=0.75 tok=345 fit=0.575 n=6
+  [0] default-cos              acc=0.833 judge=0.85 tok=192 fit=0.941 n=6
+  [0] rand-499748              acc=0.667 judge=0.85 tok=203 fit=0.772 n=6
+Generation 1: 2 new proposals (random, mutate)
+  [1] rand-325213              acc=0.833 judge=0.85 tok=166 fit=0.944 n=6
+  [1] mut-587007               acc=0.750 judge=0.00 tok=190 fit=0.772 n=4
+  pruned mut-587007 after screening (acc 0.75)
+Best vocabulary: rand-325213 (dev acc 0.833). Running held-out test...
+TEST cot          acc=0.750 CI95=[0.500,1.000] tokens=349
+TEST default_cos  acc=0.917 CI95=[0.750,1.000] tokens=192
+TEST optimized    acc=0.917 CI95=[0.750,1.000] tokens=166
+Report: C:\Users\dell\Documents\cos-optimizer\runs\20261119-065914-bricks-simulated_offline-demo/report.md
